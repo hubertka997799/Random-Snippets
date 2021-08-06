@@ -35,7 +35,7 @@ class IDSCamera:
         self.width = CAMERA_WIDTH  # 2456
         self.height = CAMERA_HEIGHT  # 2054
         if IS_COLORED_CAMERA:
-            self.bitspixel = 24  # for colormode = IS_CM_BGRA8_PACKED
+            self.bitspixel = 32  # for colormode = IS_CM_BGRA8_PACKED
         else:
             self.bitspixel = 8
         self.lineinc = self.width * int((self.bitspixel + 7) / 8)
